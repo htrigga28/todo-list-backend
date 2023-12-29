@@ -1,0 +1,22 @@
+GET http://localhost:5000/tasks
+
+
+###
+POST http://localhost:5000/tasks
+Content-Type: application/json
+
+{
+  "title": "Complete another task",
+  "description": "Finish another coding task by the end of the month",
+  "done": false
+}
+
+###
+PATCH http://localhost:5000/tasks/658d8fa2821a1ddcd854e4ee
+Content-Type: application/json
+
+{
+  "title": "Complete edited task",
+  "description": "Finish another coding task by the end of the month",
+  "done": true
+}
